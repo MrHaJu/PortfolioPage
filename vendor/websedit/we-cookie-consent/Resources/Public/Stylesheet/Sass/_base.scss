@@ -1,0 +1,147 @@
+// ******************* //
+// Variables:
+
+// Relative path to current EXT
+$path-to-ext : "../" !default;
+$path-to-ext-images : $path-to-ext + "Images/" !default;
+$path-to-ext-icons : $path-to-ext + "Icons/" !default;
+
+$base-font-size:14px !default;
+
+$color-default : #161f57 !default;
+$color-black : #000 !default;
+$color-white : #FFF !default;
+$color-none : transparent !default;
+$color-grey : #EFEFEF !default;
+$color-white-90-percent : #FFFFFFE0 !default;
+
+$opacity-hover : .7 !default;
+
+// Icons Buttons
+$icon-edit: url( $path-to-ext-icons + "icon-pen.svg") !default;
+$icon-accept: url( $path-to-ext-icons + "icon-check-dark.svg") !default;
+$icon-success: url( $path-to-ext-icons + "icon-check-dark.svg") !default;
+$icon-decline: url( $path-to-ext-icons + "icon-close.svg") !default;
+// Icons Buttons bei Hover:
+$icon-hover-edit: url( $path-to-ext-icons + "icon-pen.svg") !default;
+$icon-hover-accept: url( $path-to-ext-icons + "icon-check-dark.svg") !default;
+$icon-hover-success: url( $path-to-ext-icons + "icon-check-dark.svg") !default;
+$icon-hover-decline: url( $path-to-ext-icons + "icon-close.svg") !default;
+
+// Icons Settings
+$icon-slider-yes: url( $path-to-ext-icons + "icon-yes.svg") !default;
+$icon-slider-no: url( $path-to-ext-icons + "icon-no.svg") !default;
+$icon-slider-locked: url( $path-to-ext-icons + "icon-locked.svg") !default;
+$icon-settings-close: '\00d7' !default;
+$icon-settings-close-size: 4em !default;
+$icon-settings-close-color: #FFF !default;
+
+// Backgroud colors:
+// Background Popup:
+$color-bg: #FFF !default;
+// Background colours Buttons
+$color-bg-edit: #FFF !default;
+$color-bg-accept: #FFF !default;
+$color-bg-accept-all: transparent !default;
+$color-bg-success: #FFF !default;
+$color-bg-decline: #FFF !default;
+$color-bg-link: transparent !default;
+$color-bg-primary: #F7A925 !default;
+// Font colours buttons
+$color-font-edit: #00AFCB !default;
+$color-font-accept: #161f57 !default;
+$color-font-success: #161f57 !default;
+$color-font-decline: #161f57 !default;
+$color-font-primary: #FFF !default;
+
+// Border Colors
+$color-border: #00AFCB !default;
+$color-hover-border: #00AFCB !default;
+
+// Border properties:
+$border-width: 2px !default;
+$border-radius: 4px !default;
+$border-style: $border-width solid $color-border !default;
+$border-hover-style: $border-width solid rgba(0,0,0,.1) !default;
+
+// Sliders and Locker icon
+$color-slider:#EFEFEF !default;
+$color-slider-half-active:#DADADA !default;
+$color-slider-active:#C9C9C9 !default;
+$color-slider-knop:#B1D6E8 !default; // rgb(177,214,232)
+$color-slider-knop-half-active: #63ADD1 !default; // rgb(99,173,209)
+$color-slider-knop-active: #008000 !default; // rgb(0,128,0);  [#63ADD1; // rgb(99,173,209)]
+
+
+// Assignment colours/properties to buttons:
+$cm-btn-color: $color-default !default;
+$cm-btn-color-bg: $color-grey !default;
+$cm-btn-color-border: $color-border !default;
+$cm-btn-border: $border-style !default;
+
+$cm-link-bg : $color-bg-link !default;
+$cm-link-border : none !default;
+
+$cm-btn-color-success: $color-font-success !default;
+$cm-btn-color-bg-success: $color-bg-success !default;
+$cm-btn-color-bg-decline: $color-bg-decline !default;
+$cm-btn-color-bg-primary: $color-bg-primary !default;
+
+$border-top-purpose: $border-hover-style !default;
+
+$video-overlay-bg : $color-white-90-percent !default;
+
+// Table colours (privacy page)
+$table-headline-color : $color-default !default;
+$table-bg-color : $color-none !default;
+$table-row-bg-color : $color-slider !default;
+$table-border-color : #ABABAB !default;
+
+// Paddings und Margins
+$spacing-top-bottom : 20px !default;
+$spacing-left-right : 30px !default;
+
+
+/* Basics: */
+
+.klaro {
+	font-family: inherit;
+	font-size: $base-font-size;
+}
+.klaro.we_cookie_consent {
+//	box-shadow:1px 2px 5px rgba(0,0,0,0.2);
+	button:focus {
+		outline-style: none;
+		outline-width: 0;
+	}
+}
+
+#klaro .klaro.we_cookie_consent {
+	&.notice--center,
+	&.notice--center-floated {
+		height: 0;
+		overflow: visible;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+}
+
+.klaro.we_cookie_consent .cookie-notice,
+.klaro.we_cookie_consent .cookie-modal {
+	h1,
+	h2,
+	li,
+	p,
+	a,
+	strong,
+	ul {
+		color: $color-default;
+		font-size: 1em;
+	}
+	a {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+}

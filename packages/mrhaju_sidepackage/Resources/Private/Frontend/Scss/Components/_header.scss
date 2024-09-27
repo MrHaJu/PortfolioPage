@@ -1,0 +1,29 @@
+#header {
+  //background: $black;
+
+  .headsection {
+    height: 10rem;
+    width: 10rem;
+    .navbar-brand-image {
+      position: relative;
+      top: 1rem;
+      left: 0;
+      overflow: hidden;
+      .navbar-brand-logo-normal {
+        position: absolute;
+        height: 10rem;
+        top: 0;
+        left: 0;
+        display: block;
+        object-fit: cover;
+        filter: drop-shadow(0 0 16px $primary-light);
+        transition: filter 0.3s ease-in-out;
+        &:hover {
+          filter: drop-shadow(0 0 32px $primary-light);
+          transition: filter 0.3s ease-in-out;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:bw_captcha/Resources/Private/Language/locallang.xlf"
+		  date="2012-10-26T12:00:32Z" product-name="bw_captcha">
+		<header/>
+		<body>
+			<trans-unit id="validator.captcha.notvalid" resname="validator.captcha.notvalid">
+				<source>The entered captcha is not correct.</source>
+				<target>Das eingegebene Captcha ist nicht korrekt.</target>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.Captcha" resname="formEditor.elements.Captcha">
+				<source>Captcha</source>
+				<target>Captcha</target>
+			</trans-unit>
+			<trans-unit id="partial.refresh.title">
+				<source>Load new captcha</source>
+				<target>Neues Captcha laden</target>
+			</trans-unit>
+			<trans-unit id="partial.refresh.label">
+				<source>Refresh</source>
+				<target>Erneuern</target>
+			</trans-unit>
+			<trans-unit id="partial.audio.title">
+				<source>Read captcha aloud</source>
+				<target>Captcha vorlesen</target>
+			</trans-unit>
+			<trans-unit id="partial.audio.label">
+				<source>Read</source>
+				<target>Vorlesen</target>
+			</trans-unit>
+			<trans-unit id="partial.image.alt">
+				<source>Enter the character string shown in the picture</source>
+				<target>Geben sie die im Bild dargestellte Zeichenfolge ein</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

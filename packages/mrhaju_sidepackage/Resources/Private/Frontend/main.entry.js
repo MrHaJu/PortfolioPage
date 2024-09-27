@@ -1,0 +1,16 @@
+import './Scss/main.scss';
+import '@popperjs/core';
+import 'bootstrap';
+import '@bk2k/Resources/Public/JavaScript/Src/bootstrap.accordion.js'
+import '@bk2k/Resources/Public/JavaScript/Src/bootstrap.cookieconsent.js'
+import '@bk2k/Resources/Public/JavaScript/Src/bootstrap.lightbox.js'
+import '@bk2k/Resources/Public/JavaScript/Src/bootstrap.navbar.js'
+import '@bk2k/Resources/Public/JavaScript/Src/bootstrap.popover.js'
+import '@bk2k/Resources/Public/JavaScript/Src/bootstrap.smoothscroll.js'
+import '@bk2k/Resources/Public/JavaScript/Src/bootstrap.stickyheader.js'
+import '@bk2k/Resources/Public/Contrib/photoswipe/photoswipe.umd.min.js';
+import '@bk2k/Resources/Public/Contrib/photoswipe/photoswipe-lightbox.umd.min.js';
+import '@bk2k/Resources/Public/Contrib/photoswipe/photoswipe-dynamic-caption-plugin.umd.min.js';
+import './Js/Components/navbar.js';
+import './Js/Components/header.js';
+import './Js/Components/form.js';

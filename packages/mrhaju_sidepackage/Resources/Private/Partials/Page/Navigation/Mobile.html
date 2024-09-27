@@ -1,0 +1,67 @@
+
+
+<div id="mobile-nav-menu" class="">
+    <div class="nav-container">
+        <div class="navigation">
+        <input id="responsive-menu" type="checkbox">
+        <label for="responsive-menu">
+            <span id="menu-icon"></span>
+        </label>
+        <div id="navbar-mobile" class="">
+
+            <ul class="menu-list">
+                <f:for as="item" each="{mainnavigation}">
+                    <li class="menu-item  {f:if(condition: '{item.active}', then: ' active')}">
+                        <f:if condition="{item.children}">
+                            <f:then>
+                                <f:link.typolink  class="menu-item__link"
+                                                  parameter="{item.link}"
+                                                  title="{item.title}">
+                                    {item.title}
+
+
+                                </f:link.typolink>
+                                <span class="chevron-down">
+                               <svg height="14" viewBox="0 0 512 512" width="14" xmlns="http://www.w3.org/2000/svg" role="img"><title>Chevron-Down</title><path
+                                       d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                                       fill=""/></svg>
+                                </span>
+                                <f:comment><!--d-none wird bei touch oder click event per javascript gegen d-flex getauscht--></f:comment>
+                                <ul class="sub-menu d-none">
+                                    <f:render arguments="{dropdown:item.children}" section="dropdownContent"/>
+                                </ul>
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{item.active}">
+                                    <f:then>
+                                        <f:link.typolink class="menu-item__link {f:if(condition: '{item.active}', then: ' active')}"
+                                                         parameter="{item.link}"
+                                                         title="{item.title}">{item.title}
+                                        </f:link.typolink>
+                                    </f:then>
+                                    <f:else>
+                                        <f:link.typolink class="menu-item__link" parameter="{item.link}"
+                                                         title="{item.title}">{item.title}
+                                        </f:link.typolink>
+                                    </f:else>
+                                </f:if>
+                            </f:else>
+                        </f:if>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+
+<f:section name="dropdownContent">
+    <f:for as="childItem" each="{dropdown}">
+        <li class="menu-item dropdown">
+            <f:link.typolink class="menu-item__link {f:if(condition: '{childItem.active}', then: ' active-sub')}"
+                             parameter="{childItem.link}"
+                             title="{childItem.title}">{childItem.title}
+            </f:link.typolink>
+        </li>
+    </f:for>
+</f:section>

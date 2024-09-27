@@ -1,0 +1,86 @@
+
+renderingOptions:
+  submitButtonLabel: Absenden
+type: Form
+identifier: kontakt
+label: Kontakt
+prototypeName: standard
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: 'Ich freue mich über Ihre Nachricht'
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Vorname
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: Vorname
+            required: required
+          elementDescription: ''
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: Alphanumeric
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-2
+        label: Nachname
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            placeholder: Nachname
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: Alphanumeric
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: E-Mail
+        properties:
+          elementDescription: ''
+          fluidAdditionalAttributes:
+            placeholder: 'Ihre E-Mail'
+            required: required
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone-1
+        label: Telefonnummer
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: Telefonnummer
+          elementDescription: ''
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: 'Ihre Nachricht'
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: 'Ihre Nachricht'
+      -
+        type: Captcha
+        identifier: captcha-1
+        label: Captcha

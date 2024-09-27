@@ -1,0 +1,96 @@
+.frame-type-form_formframework {
+  .frame-group-container {
+    .frame-group-inner {
+      .frame-container {
+        .frame-inner {
+          .form-container {
+            position: relative;
+            margin: 0 auto;
+            max-width: 32rem;
+            padding: 3rem;
+            overflow: hidden;
+            border: 1px solid #000;
+            border-radius: 50px;
+            box-shadow: 0 0 25px 10px rgba(235, 202, 148, 0.1) inset;
+            //background: linear-gradient(135deg, #EBCA94 0%, #785E33 50%, #242424);
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              filter: blur(10px);
+              z-index: -1;
+            }
+            form {
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 1;
+
+              h2 {
+                text-align: center;
+                color: $primary;
+              }
+              .form-element {
+                label {
+                  opacity: 0;
+                  transition: opacity 0.3s ease;
+                  color: $primary;
+                  .required {
+                   display: none;
+                  }
+                }
+
+                input:focus::placeholder,
+                textarea:focus::placeholder {
+                  opacity: 0;
+                  transition: opacity 0.3s ease;
+
+                }
+                .visible {
+                  opacity: 1;
+                }
+                .form-control {
+                  border-radius: 0;
+                  &:focus-visible {
+                    color: $secondary;
+                    box-shadow: inset 0 1px 2px rgba(36, 36, 36, 0.075), 0 0 0 0.25rem rgba(235, 202, 148, 0.25);
+                    --bs-input-focus-ring-color: $secondary;
+
+                  }
+                }
+                &-text {
+
+                }
+                &-email {
+
+                }
+                &-phone {
+
+                }
+                &-textarea {
+
+                }
+
+
+              }
+              .form-actions {
+                .form-navigation {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  .btn {
+
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "packages/mrhaju_sidepackage/Resources/Private/Frontend/main.entry.js": {
+    "file": "assets/main.entry-D0i_ngvO.js",
+    "name": "main.entry",
+    "src": "packages/mrhaju_sidepackage/Resources/Private/Frontend/main.entry.js",
+    "isEntry": true,
+    "css": [
+      "assets/main-D38uD2m0.css"
+    ]
+  }
+}

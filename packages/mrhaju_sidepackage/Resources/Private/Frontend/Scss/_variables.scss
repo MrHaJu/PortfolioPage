@@ -1,0 +1,69 @@
+@use "sass:color";
+
+$primary: #EBCA94ff;
+$secondary: #785E33ff;
+$tertiary: #FAF6F2;
+$quaternary: #505050;
+$black: #242424;
+$white: #ffffff;
+
+$coyote: rgba(120, 94, 51, 1);
+$sunset: rgba(235, 202, 148, 1);
+$black-overlay: rgba(0, 0, 0, 0.9);
+$primary-light: color.scale($primary, $lightness: 90%);
+
+$gray-100: #f8f8f8;
+$gray-200: #e9e9e9;
+$gray-300: #dedede;
+$gray-400: #cecece;
+$gray-500: #ababab;
+$gray-600: #6c6c6c;
+$gray-700: #494949;
+$gray-800: #313131;
+$gray-900: #212121;
+
+$default: #eaebec;
+$success: #3a833a;
+$info: #287f9a;
+$warning: #a4660e;
+$danger: #d4403a;
+$lighter: $gray-100;
+$light: $gray-200;
+$dark: $gray-800;
+$darker: $gray-900;
+
+
+$theme-colors: (
+        'primary': $primary,
+        'secondary': $secondary,
+        'tertiary': $tertiary,
+        'quaternary': $quaternary,
+        'success': $success,
+        'info': $info,
+        'warning': $warning,
+        'danger': $danger,
+        'default': $default,
+        'lighter': $lighter,
+        'light': $light,
+        'dark': $dark,
+        'darker': $darker,
+);
+
+.primary {
+  background-color: $primary;
+}
+.secondary {
+  background-color: $secondary;
+}
+.tertiary {
+  background-color: $tertiary;
+}
+.quaternary {
+  background-color: $quaternary;
+}
+.light {
+  background-color: $white;
+}
+.dark {
+  background-color: $black;
+}

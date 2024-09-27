@@ -1,0 +1,169 @@
+#mobile-nav-menu {
+  position: absolute;
+  top: 10rem;
+  bottom: 0;
+  z-index: 1000;
+  .nav-container {
+    width: 15rem;
+
+    /*** INPUT ***/
+    input {
+      opacity: 0;
+      position: absolute;
+    }
+
+
+    /*** LABEL ***/
+    label {
+      cursor: pointer;
+      display: block;
+      height: 4rem;
+      width: 4rem;
+
+      &:hover {
+        color: $primary;
+
+        #menu-icon,
+        #menu-icon:before,
+        #menu-icon:after {
+          background: $primary;
+        }
+      }
+    }
+
+    /* Hamburger Icon */
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+      background: $secondary;
+      border-radius: 0.05rem;
+      height: 0.2rem;
+      transition: all .3s ease-in-out;
+      width: 1.5rem;
+    }
+
+    #menu-icon {
+      display: inline-block;
+      margin: 0.4rem 0;
+      max-width: 1.5rem;
+      position: relative;
+      z-index: 999;
+      top: 1.5rem;
+      left: 0;
+
+      &:before {
+        top: -0.5rem;
+      }
+
+      &:after {
+        bottom: -0.5rem;
+      }
+
+    }
+
+    label #menu-icon {
+      float: right;
+
+      &:before, &:after {
+        content: '';
+        left: 0;
+        position: absolute;
+      }
+    }
+
+    // Close Icon
+    input[type=checkbox]:checked + label #menu-icon {
+      background: transparent;
+
+      &:before {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        bottom: 0;
+        transform: rotate(45deg);
+      }
+    }
+
+    .navigation {
+
+      &:has(input:checked) {
+        background: $black-overlay;
+        animation: slideInLeft;
+        animation-duration: 0.5s;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+
+
+      }
+      /*** NAVIGATION ***/
+      #navbar-mobile {
+        display: none;
+        position: relative;
+        top: 2rem;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        animation: slideInLeft;
+        animation-duration: 0.5s;
+        overflow: hidden;
+
+        .menu-list {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          position: relative;
+          width: 100%;
+          left: -2rem;
+
+          .menu-item {
+            padding: 1rem 2rem;
+            width: 15rem;
+            height: 4rem;
+            position: relative;
+
+            &__link {
+              text-decoration: none;
+              position: relative;
+              left: 3rem;
+            }
+            &:hover {
+              background: $black;
+              animation: shakeX;
+              animation-duration: 0.3s;
+              .menu-item__link {
+                font-weight: bold;
+              }
+            }
+          }
+          .active {
+            background: $black;
+          }
+
+        }
+      }
+      // Nav Menu open / close
+      input:checked {
+
+        & ~ #navbar-mobile {
+          display: flex;
+          opacity: 1;
+          transition: opacity 1.2s ease-in-out;
+          overflow-y: auto;
+          height: 35rem;
+
+        }
+      }
+    }
+
+
+  }
+
+
+}

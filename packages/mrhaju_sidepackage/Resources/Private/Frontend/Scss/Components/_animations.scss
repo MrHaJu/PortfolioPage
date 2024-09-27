@@ -1,0 +1,11 @@
+@keyframes flash {
+  0% {
+    filter: drop-shadow(0 0 16px $primary-light);
+  }
+  50% {
+    filter: drop-shadow(0 0 32px $primary-light);
+  }
+  100% {
+    filter: drop-shadow(0 0 16px $primary-light);
+  }
+}

@@ -1,0 +1,16 @@
+@import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Extensions/constants.typoscript'
+
+page {
+    logo {
+        file = EXT:mrhaju_sidepackage/Resources/Public/Images/Cowboy-logo.webp
+        fileInverted =
+        alt = MrHaJu the Coding Cowboy
+        title = MrHaJu the Coding Cowboy
+        height = 400
+        width = 400
+
+    }
+    favicon {
+        file = EXT:mrhaju_sidepackage/Resources/Public/Icons/favicon.ico
+    }
+}

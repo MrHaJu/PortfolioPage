@@ -1,0 +1,17 @@
+@import 'EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
+
+page {
+    fluidtemplate {
+        layoutRootPath = EXT:mrhaju_sidepackage/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:mrhaju_sidepackage/Resources/Private/Partials/Page/
+        templateRootPath = EXT:mrhaju_sidepackage/Resources/Private/Templates/Page/
+    }
+}
+
+plugin.bootstrap_package_contentelements {
+    view {
+        templateRootPath = EXT:mrhaju_sidepackage/Resources/Private/Templates/ContentElements/
+        partialRootPath = EXT:mrhaju_sidepackage/Resources/Private/Partials/ContentElements/
+        layoutRootPath = EXT:mrhaju_sidepackage/Resources/Private/Layouts/ContentElements/
+    }
+}

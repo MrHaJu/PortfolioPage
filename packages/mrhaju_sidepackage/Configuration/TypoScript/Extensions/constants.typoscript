@@ -1,0 +1,6 @@
+
+
+# Include Overrides for Extensions
+@import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Extensions/BootstrapPackage/constants.typoscript'
+@import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Extensions/Bw_captcha/constants.typoscript'
+#@import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Extensions/we-cookie-consent/constants.typoscript'

@@ -1,0 +1,10 @@
+.body-bg {
+  background: $black;
+  min-height: 100vh;
+
+}
+html {
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}

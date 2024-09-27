@@ -1,0 +1,43 @@
+
+<div id="header-nav-menu" class="frame-container frame-container-default">
+
+    <ul
+        class="nav-menu">
+        <f:for as="item" each="{mainnavigation}">
+            <li class="menu-item">
+                <f:if condition="{item.children}">
+                    <f:then>
+                        <f:link.typolink class="menu-item__link {f:if(condition: '{item.active}', then: ' active')}"
+                                         parameter="{item.link}"
+                                         title="{item.title}">
+                            {item.title}
+                            <span class="chevron-down">
+                                <f:image src="EXT:mrhaju_sidepackage/Resources/Public/Images/chevron-down-solid.svg" />
+                                </span>
+                        </f:link.typolink>
+                        <ul class="sub-menu">
+                            <f:render section="navigationDropdown" arguments="{navigationDropdown:item.children}"/>
+                        </ul>
+                    </f:then>
+                    <f:else>
+                        <f:link.typolink class="menu-item__link {f:if(condition: '{item.active}', then: ' active')}"
+                                         parameter="{item.link}"
+                                         title="{item.title}">{item.title}
+                        </f:link.typolink>
+                    </f:else>
+                </f:if>
+            </li>
+        </f:for>
+    </ul>
+</div>
+
+<f:section name="navigationDropdown">
+    <f:for each="{navigationDropdown}" as="childItem">
+        <li class="menu-item">
+            <f:link.typolink class="menu-item__link {f:if(condition: '{childItem.active}', then: ' active-sub')}"
+                             parameter="{childItem.link}"
+                             title="{childItem.title}">{childItem.title}
+            </f:link.typolink>
+        </li>
+    </f:for>
+</f:section>

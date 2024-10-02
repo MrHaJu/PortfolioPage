@@ -19,7 +19,7 @@
 <bk2k:frame
     id="c{data.uid}"
     type="{data.CType}"
-    size="default"
+    size="{f:if(condition: '{data.layout}', then: '{data.layout as string}', else: 'default')}"
     layout="{data.frame_layout}"
     frameClass="{data.frame_class}"
     frameAttributes="{frameAttributes}"

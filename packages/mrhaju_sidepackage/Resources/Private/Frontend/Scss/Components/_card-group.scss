@@ -1,0 +1,56 @@
+.frame-type-card_group {
+
+  .card-group-element {
+    &-item {
+      animation: fadeIn;
+      animation-duration: 3s;
+      .card {
+        z-index: 1;
+        background: $quaternary;
+        //border: 1px solid $quaternary;
+        min-width: 12rem;
+        min-height: 24rem;
+        @include media-breakpoint-up(xl) {
+          width: 23rem;
+        }
+        &-img-top {
+          picture {
+            img {
+
+            }
+          }
+        }
+        &-body {
+          a {
+            text-decoration: none;
+            .card-title {
+              display: none;
+            }
+            h3 {
+
+            }
+            p {
+
+            }
+
+          }
+
+        }
+        &-footer {
+          display: none;
+          .btn {
+
+          }
+        }
+        box-shadow: none;
+        transition: box-shadow 500ms ease-in-out, scale 300ms ease-in-out, z-index 300ms linear;
+        &:hover {
+          scale:  1.2;
+          box-shadow: 0 0 10px 5px $primary-light;
+          z-index: 10;
+          transition: box-shadow 500ms ease-in-out, scale 300ms ease-in-out, z-index 300ms linear;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import 'EXT:bootstrap_package/Configuration/TsConfig/Page/TCEFORM.tsconfig'
+
+TCEFORM {
+    tt_content {
+        header_class {
+            addItems {
+                SlideUp = slideup
+                SlideDown = slidedown
+            }
+        }
+
+        subheader_class {
+            addItems {
+                SlideUp = slideup
+                SlideDown = slidedown
+            }
+        }
+
+        layout {
+            removeItems =
+            showItems = 1,2,3,4,5,6,7
+            disableNoMatchingValueElement = 1
+            addItems {
+                8 = slideup
+                9 = slidedown
+            }
+        }
+
+        tx_bootstrappackage_carousel_item {
+            layout {
+                addItems {
+                    SlideUp = slideup
+                    SlideDown = slidedown
+                }
+            }
+
+            header_class {
+                addItems {
+                    SlideUp = slideup
+                    SlideDown = slidedown
+
+                }
+            }
+
+            subheader_class {
+                addItems {
+                    SlideUp = slideup
+                    SlideDown = slidedown
+                }
+            }
+        }
+    }
+}

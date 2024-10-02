@@ -6,14 +6,15 @@
   "version": "1.0.0",
   "type": "typo3-cms-extension",
   "license": "GPL-2.0-or-later",
-  "authors": [{
-    "name": "Andreas Huppertz",
-    "email": "hamacher.design@googlemail.com"
-  }],
+  "authors": [
+    {
+      "name": "Andreas Huppertz",
+      "email": "hamacher.design@googlemail.com"
+    }
+  ],
   "require": {
     "typo3/cms-core": "^12.1"
   },
-
   "autoload": {
     "psr-4": {
       "mrhaju\\MrhajuSidepackage\\": "Classes/"

@@ -1,169 +1,300 @@
-#mobile-nav-menu {
-  position: absolute;
-  top: 10rem;
-  bottom: 0;
-  z-index: 1000;
-  .nav-container {
-    width: 15rem;
 
-    /*** INPUT ***/
-    input {
-      opacity: 0;
+.nav-container {
+  width: 100%;
+}
+#mobile-nav-menu {
+  display: none;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  z-index: 998;
+
+  @media (max-width: 1260px) {
+    display: flex;
+  }
+
+  .logo-mobile {
+    .navbar-brand-image {
+      position: relative;
+      top: 1rem;
+      left: 0;
+      overflow: hidden;
+      .navbar-brand-logo-normal {
+        position: relative;
+        height: 10rem;
+        width: auto;
+        top: 0;
+        left: 0;
+        display: block;
+        object-fit: cover;
+        filter: drop-shadow(0 0 16px $primary-light);
+        transition: filter 0.3s ease-in-out;
+        &:hover {
+          filter: drop-shadow(0 0 32px $primary-light);
+          transition: filter 0.3s ease-in-out;
+        }
+
+      }
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+
+  /*** INPUT ***/
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+
+
+  /*** LABEL ***/
+  label {
+    cursor: pointer;
+    display: block;
+    height: 4rem;
+    width: 100%;
+
+    &:hover {
+      color: $primary;
+
+      #menu-icon,
+      #menu-icon:before,
+      #menu-icon:after {
+        background: $primary;
+      }
+    }
+  }
+
+  /* Hamburger Icon */
+  #menu-icon,
+  #menu-icon:before,
+  #menu-icon:after {
+    background: $primary;
+    border-radius: 0.05rem;
+    height: 0.2rem;
+    transition: all .3s ease-in-out;
+    width: 1.5rem;
+  }
+
+  #menu-icon {
+    display: inline-block;
+    margin: 0.4rem 0;
+    max-width: 1.5rem;
+    position: relative;
+    z-index: 999;
+    top: 1.5rem;
+    right: 3vw;
+
+    &:before {
+      top: -0.5rem;
+    }
+
+    &:after {
+      bottom: -0.5rem;
+    }
+
+  }
+
+  label #menu-icon {
+    float: right;
+
+    &:before, &:after {
+      content: '';
+      left: 0;
       position: absolute;
     }
+  }
+
+  // Close Icon
+  input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+
+    &:before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      bottom: 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  #navbar-mobile {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: -.5rem;
+    //left: 0;
+    right: 0;
+    animation: slideInRight;
+    animation-duration: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    background-color: $black-overlay;
+
+    .menu-list {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 5rem 0 0 1rem;
+      width: 16rem;
+
+      .menu-item {
+        text-transform: uppercase;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        position: relative;
+        right: 3vw;
+
+        &__link {
+          text-decoration: none;
+          font-weight: 400;
+          color: $primary;
+
+          &::after {
+            content: '';
+            display: block;
+            position: relative;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: $primary;
+            transition: width .3s ease-in-out;
+          }
+
+          &:hover {
 
 
-    /*** LABEL ***/
-    label {
-      cursor: pointer;
-      display: block;
-      height: 4rem;
-      width: 4rem;
+            color: $secondary;
+            transition: color .3s ease-in-out;
 
-      &:hover {
-        color: $primary;
+            &::after {
+              width: 2rem;
+            }
+          }
 
-        #menu-icon,
-        #menu-icon:before,
-        #menu-icon:after {
-          background: $primary;
         }
-      }
-    }
 
-    /* Hamburger Icon */
-    #menu-icon,
-    #menu-icon:before,
-    #menu-icon:after {
-      background: $secondary;
-      border-radius: 0.05rem;
-      height: 0.2rem;
-      transition: all .3s ease-in-out;
-      width: 1.5rem;
-    }
+        .chevron-down {
+          display: inline-block;
+          cursor: pointer;
+          //margin-left: .5rem;
+          padding: 0 0 .5rem .5rem;
 
-    #menu-icon {
-      display: inline-block;
-      margin: 0.4rem 0;
-      max-width: 1.5rem;
-      position: relative;
-      z-index: 999;
-      top: 1.5rem;
-      left: 0;
+          svg {
+            fill: currentColor;
 
-      &:before {
-        top: -0.5rem;
-      }
-
-      &:after {
-        bottom: -0.5rem;
-      }
-
-    }
-
-    label #menu-icon {
-      float: right;
-
-      &:before, &:after {
-        content: '';
-        left: 0;
-        position: absolute;
-      }
-    }
-
-    // Close Icon
-    input[type=checkbox]:checked + label #menu-icon {
-      background: transparent;
-
-      &:before {
-        top: 0;
-        transform: rotate(-45deg);
-      }
-
-      &:after {
-        bottom: 0;
-        transform: rotate(45deg);
-      }
-    }
-
-    .navigation {
-
-      &:has(input:checked) {
-        background: $black-overlay;
-        animation: slideInLeft;
-        animation-duration: 0.5s;
-        border-top-right-radius: 100px;
-        border-bottom-right-radius: 100px;
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 0;
+          }
+        }
 
 
-      }
-      /*** NAVIGATION ***/
-      #navbar-mobile {
-        display: none;
-        position: relative;
-        top: 2rem;
-        bottom: 0;
-        left: 0;
-        width: auto;
-        animation: slideInLeft;
-        animation-duration: 0.5s;
-        overflow: hidden;
-
-        .menu-list {
+        .sub-menu {
+          flex-basis: 100%;
           list-style: none;
-          display: flex;
           flex-direction: column;
-          gap: 2rem;
-          position: relative;
-          width: 100%;
-          left: -2rem;
+          gap: 1.5rem;
+          margin-top: 1rem;
 
           .menu-item {
-            padding: 1rem 2rem;
-            width: 15rem;
-            height: 4rem;
-            position: relative;
 
             &__link {
-              text-decoration: none;
-              position: relative;
-              left: 3rem;
-            }
-            &:hover {
-              background: $black;
-              animation: shakeX;
-              animation-duration: 0.3s;
-              .menu-item__link {
-                font-weight: bold;
+              color: $quaternary;
+
+              &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background-color: $primary;
+                transition: width .3s ease-in-out;
+              }
+
+              &:hover {
+                color: $secondary;
+                transition: color .3s ease-in-out;
+
+                &::after {
+                  width: 32px;
+                }
+
               }
             }
-          }
-          .active {
-            background: $black;
-          }
 
+
+            .active-sub {
+              color: $primary;
+            }
+          }
         }
-      }
-      // Nav Menu open / close
-      input:checked {
 
-        & ~ #navbar-mobile {
-          display: flex;
-          opacity: 1;
-          transition: opacity 1.2s ease-in-out;
-          overflow-y: auto;
-          height: 35rem;
-
+        .active {
+          color: $primary;
         }
       }
     }
+  }
+
+  // Nav Menu open / close
+  input:checked ~ #navbar-mobile {
+    display: flex;
+    opacity: 1;
+    transition: opacity 1.2s ease-in-out;
+    //height: 100dvh;
+    width: 16rem ;
+    //background-color: $primary;
+    overflow-y: auto;
 
 
   }
 
+}
+
+.sticky {
+  #mobile-nav-menu {
+    .logo-mobile {
+      .navbar-brand-image {
+        top: 0;
+        .navbar-brand-logo-normal {
+          width: auto;
+          height: 80px;
+          &:hover {
+            filter: drop-shadow(0 0 32px $primary-light);
+            transition: filter 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+    .nav-container {
+
+      #menu-icon {
+        top: 1.5rem;
+      }
+
+      #navbar-mobile {
+        //position: relative;
+        top: 5rem !important;
+        background-color: $quaternary;
+        .menu-list {
+          padding: 0 0 0 1rem;
+
+        }
+      }
+    }
+  }
+
 
 }
+
+

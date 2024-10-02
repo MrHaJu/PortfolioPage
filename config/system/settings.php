@@ -153,8 +153,10 @@ return [
         ],
     ],
     'MAIL' => [
+        'defaultMailFromAddress' => '',
+        'defaultMailFromName' => '',
         'transport' => 'sendmail',
-        'transport_sendmail_command' => '',
+        'transport_sendmail_command' => 'sendmail -t',
         'transport_smtp_encrypt' => '',
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',

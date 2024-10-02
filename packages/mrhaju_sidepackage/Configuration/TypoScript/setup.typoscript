@@ -1,6 +1,7 @@
 @import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Extensions/setup.typoscript'
 @import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Page/config.typoscript'
 @import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Page/page.typoscript'
+@import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Content-Block/setup.typoscript'
 
 [applicationContext matches "/^Development/"]
   config {

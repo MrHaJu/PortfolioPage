@@ -1,0 +1,18 @@
+.frame-type-gallery {
+  .gallery-row {
+    display: grid;
+    place-content: center;
+    max-width: 80vw;
+    .gallery-item {
+      max-width: 300px;
+      .image {
+        picture {
+          img {
+            max-width: 300px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/packages/mrhaju_sidepackage/Classes" isTestSource="false" packagePrefix="mrhaju\MrhajuSidepackage\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bacon/bacon-qr-code" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bk2k/bootstrap-package" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/christian-riesen/base32" />

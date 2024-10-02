@@ -8,3 +8,12 @@ html {
     overflow-y: hidden;
   }
 }
+
+.SlideDown {
+  animation: slideInDown;
+    animation-duration: 400ms;
+}
+.SlideUp {
+    animation: slideInUp;
+    animation-duration: 400ms;
+}

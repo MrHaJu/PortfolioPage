@@ -1,1 +1,201 @@
 @import 'EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
+
+#multiplier und Renderauflösung der einzelnen Contentelemente anpassen
+lib.contentElement {
+    settings {
+        gallery {
+            columns {
+                1 {
+                    gutters {
+                        default = 24
+                        xlarge = 24
+                        large = 24
+                        medium = 16
+                        small = 8
+                        extrasmall = 8
+                    }
+                    multiplier {
+                        default = 2
+                        xlarge = 2
+                        large = 1.5
+                        medium = 1.5
+                        small = 1.5
+                        extrasmall = 1.5
+                    }
+                }
+                2 {
+                    gutters {
+                        default = 24
+                        xlarge = 24
+                        large = 24
+                        medium = 16
+                        small = 8
+                        extrasmall = 8
+                    }
+                    multiplier {
+                        default = 2
+                        xlarge = 2
+                        large = 1.5
+                        medium = 1.5
+                        small = 1.5
+                        extrasmall = 1.5
+                    }
+                }
+                3 {
+                    gutters {
+                        default = 24
+                        xlarge = 24
+                        large = 24
+                        medium = 16
+                        small = 8
+                        extrasmall = 8
+                    }
+                    multiplier {
+                        default = 2
+                        xlarge = 2
+                        large = 1.5
+                        medium = 1.5
+                        small = 1.5
+                        extrasmall = 1.5
+                    }
+                }
+                4 {
+                    gutters {
+                        default = 24
+                        xlarge = 24
+                        large = 24
+                        medium = 16
+                        small = 8
+                        extrasmall = 8
+                    }
+                    multiplier {
+                        default = 2
+                        xlarge = 2
+                        large = 1.5
+                        medium = 1.5
+                        small = 1.5
+                        extrasmall = 1.5
+                    }
+                }
+                5 {
+                    gutters {
+                        default = 24
+                        xlarge = 24
+                        large = 24
+                        medium = 16
+                        small = 8
+                        extrasmall = 8
+                    }
+                    multiplier {
+                        default = 2
+                        xlarge = 2
+                        large = 1.5
+                        medium = 1.5
+                        small = 1.5
+                        extrasmall = 1.5
+                    }
+                }
+                6 {
+                    gutters {
+                        default = 24
+                        xlarge = 24
+                        large = 24
+                        medium = 16
+                        small = 8
+                        extrasmall = 8
+                    }
+                    multiplier {
+                        default = 2
+                        xlarge = 2
+                        large = 1.5
+                        medium = 1.5
+                        small = 1.5
+                        extrasmall = 1.5
+                    }
+                }
+            }
+        }
+        responsiveimages {
+            contentelements {
+                card_group {
+
+                    1 {
+                        gutters {
+                            default = 24
+                            xlarge = 24
+                            large = 24
+                            medium = 16
+                            small = 8
+                            extrasmall = 8
+                        }
+                        multiplier {
+                            default = 2
+                            xlarge = 2
+                            large = 1.5
+                            medium = 1.5
+                            small = 1.5
+                            extrasmall = 1.5
+                        }
+                    }
+                    2 {
+                        gutters {
+                            default = 24
+                            xlarge = 24
+                            large = 24
+                            medium = 16
+                            small = 8
+                            extrasmall = 8
+                        }
+                        multiplier {
+                            default = 2
+                            xlarge = 2
+                            large = 1.5
+                            medium = 1.5
+                            small = 1.5
+                            extrasmall = 1.5
+                        }
+                    }
+                    3 {
+                        gutters {
+                            default = 24
+                            xlarge = 24
+                            large = 24
+                            medium = 16
+                            small = 8
+                            extrasmall = 8
+                        }
+                        multiplier {
+                            default = 2
+                            xlarge = 2
+                            large = 1.5
+                            medium = 1.5
+                            small = 1.5
+                            extrasmall = 1.5
+                        }
+                    }
+                    4 {
+                        gutters {
+                            default = 24
+                            xlarge = 24
+                            large = 24
+                            medium = 16
+                            small = 8
+                            extrasmall = 8
+                        }
+                        multiplier {
+                            default = 2
+                            xlarge = 2
+                            large = 1.5
+                            medium = 1.5
+                            small = 1.5
+                            extrasmall = 1.5
+                        }
+                    }
+
+
+                }
+            }
+
+       }
+    }
+}

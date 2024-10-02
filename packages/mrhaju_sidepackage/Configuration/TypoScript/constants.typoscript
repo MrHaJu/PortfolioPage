@@ -1,4 +1,5 @@
 @import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Extensions/constants.typoscript'
+@import 'EXT:mrhaju_sidepackage/Configuration/TypoScript/Content-Block/constants.typoscript'
 
 page {
     logo {
@@ -12,5 +13,21 @@ page {
     }
     favicon {
         file = EXT:mrhaju_sidepackage/Resources/Public/Icons/favicon.ico
+    }
+
+    theme {
+        contact {
+            enable = 1
+            data {
+                phone = +49 (0)151 416 32 212
+                email = hamacher.design@googlemail.com
+                logo = EXT:mrhaju_sidepackage/Resources/Public/Images/Cowboy.webp
+                logoAlt = MrHaJu the Coding Cowboy
+                logoTitle = MrHaJu GITHUB Profile
+                width = 200
+                height = 200
+                link = https://github.com/MrHaJu
+            }
+        }
     }
 }

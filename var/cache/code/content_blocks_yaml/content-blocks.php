@@ -1277,5 +1277,215 @@ return array (
     'hostExtension' => 't3sswiper',
     'extPath' => 'EXT:t3sswiper/ContentBlocks/ContentElements/swiperslider',
   ),
+  'mrhaju/progress-bar' => 
+  array (
+    'name' => 'mrhaju/progress-bar',
+    'yaml' => 
+    array (
+      'name' => 'mrhaju/progress-bar',
+      'title' => 'mrhaju/progress-bar',
+      'description' => 'Progress Bar',
+      'group' => 'common',
+      'prefixFields' => true,
+      'prefixType' => 'full',
+      'basics' => 
+      array (
+        0 => 'TYPO3/Appearance',
+        1 => 'TYPO3/Categories',
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'identifier' => 'header',
+          'useExistingField' => true,
+          'label' => 'Custom header label',
+          'type' => 'Text',
+        ),
+        1 => 
+        array (
+          'identifier' => 'progress',
+          'label' => 'Fortschritt in %',
+          'type' => 'Text',
+        ),
+        2 => 
+        array (
+          'identifier' => 'progressColor',
+          'label' => 'Textfarbe des Fortschrittsbalkens',
+          'type' => 'Radio',
+          'items' => 
+          array (
+            0 => 
+            array (
+              'value' => 'blue',
+              'label' => 'Blau',
+            ),
+            1 => 
+            array (
+              'value' => 'middleblue',
+              'label' => 'Mittleres Blau',
+            ),
+            2 => 
+            array (
+              'value' => 'lightblue',
+              'label' => 'Hellblau',
+            ),
+            3 => 
+            array (
+              'value' => 'orange',
+              'label' => 'Orange',
+            ),
+            4 => 
+            array (
+              'value' => 'yellow',
+              'label' => 'Gelb',
+            ),
+            5 => 
+            array (
+              'value' => 'red',
+              'label' => 'Rot',
+            ),
+            6 => 
+            array (
+              'value' => 'green',
+              'label' => 'Grün',
+            ),
+            7 => 
+            array (
+              'value' => 'purple',
+              'label' => 'Lila',
+            ),
+            8 => 
+            array (
+              'value' => 'pink',
+              'label' => 'Pink',
+            ),
+            9 => 
+            array (
+              'value' => 'white',
+              'label' => 'Weiß',
+            ),
+            10 => 
+            array (
+              'value' => 'black',
+              'label' => 'Schwarz',
+            ),
+          ),
+        ),
+        3 => 
+        array (
+          'identifier' => 'progressBackgroundColor',
+          'label' => 'Farbe des Hintergrundes des Fortschrittsbalkens',
+          'type' => 'Radio',
+          'items' => 
+          array (
+            0 => 
+            array (
+              'value' => 'blue',
+              'label' => 'Blau',
+            ),
+            1 => 
+            array (
+              'value' => 'middleblue',
+              'label' => 'Mittleres Blau',
+            ),
+            2 => 
+            array (
+              'value' => 'lightblue',
+              'label' => 'Hellblau',
+            ),
+            3 => 
+            array (
+              'value' => 'orange',
+              'label' => 'Orange',
+            ),
+            4 => 
+            array (
+              'value' => 'yellow',
+              'label' => 'Gelb',
+            ),
+            5 => 
+            array (
+              'value' => 'red',
+              'label' => 'Rot',
+            ),
+            6 => 
+            array (
+              'value' => 'green',
+              'label' => 'Grün',
+            ),
+            7 => 
+            array (
+              'value' => 'purple',
+              'label' => 'Lila',
+            ),
+            8 => 
+            array (
+              'value' => 'pink',
+              'label' => 'Pink',
+            ),
+          ),
+        ),
+        4 => 
+        array (
+          'identifier' => 'progressHeight',
+          'label' => 'Höhe des Fortschrittsbalkens',
+          'type' => 'Text',
+        ),
+        5 => 
+        array (
+          'identifier' => 'appearance_tab',
+          'type' => 'Tab',
+          'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance',
+        ),
+        6 => 
+        array (
+          'identifier' => 'frames_palette',
+          'type' => 'Palette',
+          'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames',
+          'fields' => 
+          array (
+            0 => 
+            array (
+              'identifier' => 'layout',
+              'useExistingField' => true,
+            ),
+            1 => 
+            array (
+              'identifier' => 'frame_class',
+              'useExistingField' => true,
+            ),
+            2 => 
+            array (
+              'identifier' => 'space_before_class',
+              'useExistingField' => true,
+            ),
+            3 => 
+            array (
+              'identifier' => 'space_after_class',
+              'useExistingField' => true,
+            ),
+          ),
+        ),
+        7 => 
+        array (
+          'identifier' => 'categories_tab',
+          'type' => 'Tab',
+          'label' => 'LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories',
+        ),
+        8 => 
+        array (
+          'identifier' => 'categories',
+          'useExistingField' => true,
+        ),
+      ),
+      'table' => 'tt_content',
+      'typeField' => 'CType',
+    ),
+    'icon' => '_assets/36361ed76d95e1808a9a291d14e9903c/Icon.svg',
+    'iconProvider' => 'TYPO3\\CMS\\Core\\Imaging\\IconProvider\\SvgIconProvider',
+    'hostExtension' => 'mrhaju_sidepackage',
+    'extPath' => 'EXT:mrhaju_sidepackage/ContentBlocks/ContentElements/progress-bar',
+  ),
 );
 #

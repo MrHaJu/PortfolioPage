@@ -1,18 +1,18 @@
 
 
 // Sticky Navigation. If the user scrolls down, the navigation will be fixed at the top of the page.
-// document.addEventListener('DOMContentLoaded', function() {
-//   const navToggle = document.querySelector('.navigation');
-//
-//   window.addEventListener('scroll', function () {
-//     if (window.scrollY > 100) {
-//       navToggle.classList.add('sticky');
-//     } else {
-//       navToggle.classList.remove('sticky');
-//     }
-//   });
-//
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.navi');
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 100) {
+      navToggle.classList.add('sticky');
+    } else {
+      navToggle.classList.remove('sticky');
+    }
+  });
+
+});
 
 // Mobile Navigation. If the user clicks on the hamburger icon, the scrollbar will be shown or hidden.
 document.addEventListener('DOMContentLoaded', function () {

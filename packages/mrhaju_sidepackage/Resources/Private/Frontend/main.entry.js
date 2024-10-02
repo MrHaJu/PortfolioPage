@@ -14,3 +14,4 @@ import '@bk2k/Resources/Public/Contrib/photoswipe/photoswipe-dynamic-caption-plu
 import './Js/Components/navbar.js';
 import './Js/Components/header.js';
 import './Js/Components/form.js';
+import './Js/Components/bricks.js';

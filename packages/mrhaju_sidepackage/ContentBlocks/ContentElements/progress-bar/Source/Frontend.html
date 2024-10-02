@@ -1,0 +1,16 @@
+<cb:asset.css file="Frontend.css" identifier="content-block-css-mrhaju-mrhaju/progress-bar"/>
+<cb:asset.script file="Frontend.js" identifier="content-block-js-mrhaju-mrhaju/progress-bar"/>
+<f:layout name="Default"/>
+<f:section name="Header"/>
+<f:section name="Main">
+
+
+    <h6 class="header">{data.header}</h6>
+    <div aria-label="Warning example" aria-valuemax="100" aria-valuemin="0" aria-valuenow="{data.progress}"
+         class="progress" role="progressbar" style="height: {data.progressHeight}">
+        <div class="progress-bar {data.progressBackgroundColor}"
+             style="width: {data.progress}%; color: {data.progressColor};">{data.progress}%
+        </div>
+    </div>
+
+</f:section>

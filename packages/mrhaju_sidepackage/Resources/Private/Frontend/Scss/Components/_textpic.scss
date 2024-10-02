@@ -1,0 +1,18 @@
+.frame-type-textpic {
+  .textpic {
+    &-item {
+      .gallery-row {
+        justify-content: center;
+        .gallery-item {
+          .image {
+            picture {
+              img {
+                border-radius: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

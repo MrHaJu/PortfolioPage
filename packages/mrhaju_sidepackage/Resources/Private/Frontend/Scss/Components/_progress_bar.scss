@@ -1,0 +1,66 @@
+.frame-type-mrhaju_progressbar {
+
+  $animation-time: (200ms, 300ms, 400ms, 500ms, 600ms, 700ms, 800ms, 900ms, 1000ms, 1100ms, 1200ms, 1300ms, 1400ms, 1500ms, 1600ms, 1700ms, 1800ms, 1900ms, 2000ms, 2100ms);
+@for $i from 1 through length($animation-time) {
+  &:nth-child(#{$i}) {
+    animation: slideInLeft;
+    animation-duration: nth($animation-time, $i);
+  }
+}
+
+  .frame-group-container {
+    .frame-group-inner {
+      .frame-container {
+        .frame-inner {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .header {
+            margin-right: 1rem;
+          }
+          .progress {
+            width: 80%;
+            background-color: $quaternary;
+            box-shadow: 0 0 1rem 0 $black;
+            .progress-bar {
+              box-shadow: 0 0 6px 0 white inset;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.blue {
+  background-color: blue;
+}
+.lightblue {
+  background-color: lightblue;
+}
+.middleblue {
+  background-color: #0d6efd;
+}
+.orange {
+  background-color: #cb8611;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.purple {
+  background-color: purple;
+}
+.yellow {
+  background-color: yellow;
+}
+.pink {
+  background-color: #c94683;
+}
+.white {
+  background-color: white;
+}
+.black {
+  background-color: black;
+}

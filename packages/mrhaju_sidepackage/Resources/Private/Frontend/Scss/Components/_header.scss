@@ -1,9 +1,21 @@
 #header {
   //background: $black;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .navi {
+    width: 50vw;
+    @media (max-width: 1260px) {
+      width: 100vw;
+    }
+  }
   .headsection {
     height: 10rem;
-    width: 10rem;
+    width: 20rem;
+    @media (max-width: 1260px) {
+      display: none;
+    }
     .navbar-brand-image {
       position: relative;
       top: 1rem;
@@ -12,14 +24,15 @@
       .navbar-brand-logo-normal {
         position: absolute;
         height: 10rem;
+        width: auto;
         top: 0;
         left: 0;
         display: block;
         object-fit: cover;
-        filter: drop-shadow(0 0 16px $primary-light);
+        filter: none;
         transition: filter 0.3s ease-in-out;
         &:hover {
-          filter: drop-shadow(0 0 32px $primary-light);
+          filter: drop-shadow(0 0 16px $primary-light);
           transition: filter 0.3s ease-in-out;
         }
 

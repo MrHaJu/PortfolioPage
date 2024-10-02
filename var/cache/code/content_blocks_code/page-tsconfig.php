@@ -14,5 +14,19 @@ return array (
     }
     show := addToList(t3s_swiperslider)
 }',
+  1 => 'mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        mrhaju_progressbar {
+            iconIdentifier = tt_content-mrhaju_progressbar-116cf86
+            title = LLL:EXT:mrhaju_sidepackage/ContentBlocks/ContentElements/progress-bar/Source/Language/Labels.xlf:title
+            description = LLL:EXT:mrhaju_sidepackage/ContentBlocks/ContentElements/progress-bar/Source/Language/Labels.xlf:description
+            saveAndClose = 0
+            tt_content_defValues {
+                CType = mrhaju_progressbar
+            }
+        }
+    }
+    show := addToList(mrhaju_progressbar)
+}',
 );
 #

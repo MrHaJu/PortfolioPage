@@ -1,0 +1,76 @@
+name: mrhaju/progress-bar
+title: mrhaju/progress-bar
+description: 'Progress Bar'
+group: common
+prefixFields: true
+prefixType: full
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Categories
+fields:
+  -
+    identifier: header
+    useExistingField: true
+    label: 'Custom header label'
+    type: Text
+  -
+    identifier: progress
+    label: 'Fortschritt in %'
+    type: Text
+  -
+    identifier: progressColor
+    label: 'Textfarbe des Fortschrittsbalkens'
+    type: Radio
+    items:
+      - value: 'blue'
+        label: 'Blau'
+      - value: 'middleblue'
+        label: 'Mittleres Blau'
+      - value: 'lightblue'
+        label: 'Hellblau'
+      - value: 'orange'
+        label: 'Orange'
+      - value: 'yellow'
+        label: 'Gelb'
+      - value: 'red'
+        label: 'Rot'
+      - value: 'green'
+        label: 'Grün'
+      - value: 'purple'
+        label: 'Lila'
+      - value: 'pink'
+        label: 'Pink'
+      - value: 'white'
+        label: 'Weiß'
+      - value: 'black'
+        label: 'Schwarz'
+  -
+    identifier: progressBackgroundColor
+    label: 'Farbe des Hintergrundes des Fortschrittsbalkens'
+    type: Radio
+    items:
+      - value: 'blue'
+        label: 'Blau'
+      - value: 'middleblue'
+        label: 'Mittleres Blau'
+      - value: 'lightblue'
+        label: 'Hellblau'
+      - value: 'orange'
+        label: 'Orange'
+      - value: 'yellow'
+        label: 'Gelb'
+      - value: 'red'
+        label: 'Rot'
+      - value: 'green'
+        label: 'Grün'
+      - value: 'purple'
+        label: 'Lila'
+      - value: 'pink'
+        label: 'Pink'
+
+  -
+    identifier: progressHeight
+    label: 'Höhe des Fortschrittsbalkens'
+    type: Text
+
+

@@ -1,3 +1,19 @@
+/* New Boston */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'New Boston NF';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../../Public/Fonts/New Boston NF W01 Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* Rubik */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../../Public/Fonts/Rubik-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 /* Ubuntu */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -7,33 +23,47 @@
     src: url('../../../Public/Fonts/Ubuntu-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* Rubik */
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../../../Public/Fonts/Rubik-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+* {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+
 }
 
 p {
-    font-family: "Rubik", sans-serif;
+    color: $primary;
+    //text-wrap: balance;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
 }
 
 .btn {
     font-family: 'Ubuntu', sans-serif;
 }
-h1, h2, h3, h4, h5 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+
+h1,
+h2,
+h1 >span,
+h2 >span {
+    font-family: 'New Boston NF', sans-serif;
+    font-weight: 500;
+    letter-spacing: .25rem;
+    color: $primary;
+    hyphens: auto;
 }
-h6 {
-      font-family: 'Rubik', sans-serif;
-      font-weight: 700;
+h3, h4, h5,h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: $primary;
 
 }
+
 span {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
+    color: $primary;
+}
 
+h1 > span {
+ font-size: 3rem;
+}
+h2 > span {
+    font-size: 2.5rem;
 }

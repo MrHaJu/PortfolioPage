@@ -9,3 +9,22 @@
     filter: drop-shadow(0 0 16px $primary-light);
   }
 }
+
+.frame-size-8 {
+  animation: slideInUp;
+  animation-duration: 400ms;
+}
+
+.frame-size-9 {
+  animation: slideInDown;
+  animation-duration: 400ms;
+}
+
+.slideup {
+  animation: slideInUp;
+  animation-duration: 400ms;
+}
+.slidedown {
+  animation: slideInDown;
+  animation-duration: 400ms;
+}

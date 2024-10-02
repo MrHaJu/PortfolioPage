@@ -29,9 +29,9 @@ class partial_PageLayout_RecordDefault_Footer_886ef1192bcb2389 extends \TYPO3Flu
   array (
     0 => 'BK2K\\BootstrapPackage\\ViewHelpers',
   ),
-  'container' => 
+  'be' => 
   array (
-    0 => 'B13\\Container\\ViewHelpers',
+    0 => 'TYPO3\\CMS\\Backend\\ViewHelpers',
   ),
 ));
     }

@@ -67,3 +67,23 @@ $theme-colors: (
 .dark {
   background-color: $black;
 }
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.5;
+$h3-font-size: $font-size-base * 2.125;
+$h4-font-size: $font-size-base * 1.75;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base * 1.25;
+
+$headings-font-weight: 700;
+
+$display-font-sizes: (
+        1: $h1-font-size * 1.5,
+        2: $h2-font-size * 1.5,
+        3: $h3-font-size * 1.5,
+        4: $h4-font-size * 1.5,
+        5: $h5-font-size * 1.5,
+        6: $h6-font-size * 1.5
+);
+$display-font-weight: 700;

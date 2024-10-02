@@ -14,4 +14,6 @@ plugin.bootstrap_package_contentelements {
         partialRootPath = EXT:mrhaju_sidepackage/Resources/Private/Partials/ContentElements/
         layoutRootPath = EXT:mrhaju_sidepackage/Resources/Private/Layouts/ContentElements/
     }
+
+
 }

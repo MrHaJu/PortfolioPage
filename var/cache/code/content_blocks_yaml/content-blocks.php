@@ -1277,6 +1277,109 @@ return array (
     'hostExtension' => 't3sswiper',
     'extPath' => 'EXT:t3sswiper/ContentBlocks/ContentElements/swiperslider',
   ),
+  'mrhaju/flip-card' => 
+  array (
+    'name' => 'mrhaju/flip-card',
+    'yaml' => 
+    array (
+      'name' => 'mrhaju/flip-card',
+      'title' => 'mrhaju/flip-card',
+      'description' => 'Description for Content Element mrhaju/flip-card',
+      'group' => 'common',
+      'prefixFields' => true,
+      'prefixType' => 'full',
+      'basics' => 
+      array (
+        0 => 'TYPO3/Appearance',
+        1 => 'TYPO3/Categories',
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'identifier' => 'header',
+          'useExistingField' => true,
+          'label' => 'Custom header label',
+        ),
+        1 => 
+        array (
+          'identifier' => 'cardImageFront',
+          'label' => 'Card Front Image',
+          'type' => 'File',
+        ),
+        2 => 
+        array (
+          'identifier' => 'cardBackContent',
+          'label' => 'Card Back Content',
+          'type' => 'File',
+        ),
+        3 => 
+        array (
+          'identifier' => 'cardTitle',
+          'label' => 'Card Title',
+          'type' => 'Text',
+        ),
+        4 => 
+        array (
+          'identifier' => 'cardText',
+          'label' => 'Card Text',
+          'type' => 'Text',
+        ),
+        5 => 
+        array (
+          'identifier' => 'appearance_tab',
+          'type' => 'Tab',
+          'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance',
+        ),
+        6 => 
+        array (
+          'identifier' => 'frames_palette',
+          'type' => 'Palette',
+          'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames',
+          'fields' => 
+          array (
+            0 => 
+            array (
+              'identifier' => 'layout',
+              'useExistingField' => true,
+            ),
+            1 => 
+            array (
+              'identifier' => 'frame_class',
+              'useExistingField' => true,
+            ),
+            2 => 
+            array (
+              'identifier' => 'space_before_class',
+              'useExistingField' => true,
+            ),
+            3 => 
+            array (
+              'identifier' => 'space_after_class',
+              'useExistingField' => true,
+            ),
+          ),
+        ),
+        7 => 
+        array (
+          'identifier' => 'categories_tab',
+          'type' => 'Tab',
+          'label' => 'LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories',
+        ),
+        8 => 
+        array (
+          'identifier' => 'categories',
+          'useExistingField' => true,
+        ),
+      ),
+      'table' => 'tt_content',
+      'typeField' => 'CType',
+    ),
+    'icon' => '_assets/e49814126bbc738de538dcebc7e9bcc4/Icon.svg',
+    'iconProvider' => 'TYPO3\\CMS\\Core\\Imaging\\IconProvider\\SvgIconProvider',
+    'hostExtension' => 'mrhaju_sidepackage',
+    'extPath' => 'EXT:mrhaju_sidepackage/ContentBlocks/ContentElements/flip-card',
+  ),
   'mrhaju/progress-bar' => 
   array (
     'name' => 'mrhaju/progress-bar',

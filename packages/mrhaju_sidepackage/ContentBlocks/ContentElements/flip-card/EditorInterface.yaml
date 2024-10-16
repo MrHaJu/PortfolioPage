@@ -1,0 +1,33 @@
+name: mrhaju/flip-card
+title: mrhaju/flip-card
+description: 'Description for Content Element mrhaju/flip-card'
+group: common
+prefixFields: true
+prefixType: full
+basics:
+  - TYPO3/Appearance
+  - TYPO3/Categories
+fields:
+  -
+    identifier: header
+    useExistingField: true
+    label: 'Custom header label'
+  -
+    identifier: cardImageFront
+    label: 'Card Front Image'
+    type: File
+  -
+    identifier: cardBackContent
+    label: 'Card Back Content'
+    type: File
+
+  -
+    identifier: cardTitle
+    label: 'Card Title'
+    type: Text
+  -
+    identifier: cardText
+    label: 'Card Text'
+    type: Text
+
+

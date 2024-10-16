@@ -128,6 +128,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/t3s/t3s-swiper" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/tritum/form-element-linked-checkbox" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/websedit/we-cookie-consent" />
+      <excludeFolder url="file://$MODULE_DIR$/.ddev" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

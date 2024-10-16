@@ -1,0 +1,13 @@
+import type { InputOption } from "rollup";
+import type { AliasOptions, Logger } from "vite";
+import type { ComposerContext, PluginConfig, PluginTarget, UserConfig, Typo3ProjectContext, Typo3ExtensionContext } from "./types.js";
+export declare function initializePluginConfig<T extends ComposerContext>(userConfig: UserConfig, root: string): PluginConfig<T>;
+export declare function collectComposerChain(path: string): ComposerContext[];
+export declare function createComposerContext(json: any, path: string): ComposerContext;
+export declare function determineComposerContext<T extends ComposerContext>(target: PluginTarget, chain: ComposerContext[]): T | undefined;
+export declare function findEntrypointsInExtensions(extensions: Typo3ExtensionContext[], entrypointFile: string, entrypointIgnorePatterns: string[]): string[];
+export declare function determineRelevantTypo3Extensions(composerContext: Typo3ProjectContext, entrypointFile: string): Typo3ExtensionContext[];
+export declare function outputDebugInformation(relevantExtensions: Typo3ExtensionContext[], entrypoints: string[], composerContext: ComposerContext, logger: Logger): void;
+export declare function addRollupInputs(input: InputOption | undefined, additionalInputs: string[]): InputOption;
+export declare function addAliases(alias: AliasOptions | undefined, extensions: Typo3ExtensionContext[]): AliasOptions;
+export declare function readJsonFile(file: string): any;

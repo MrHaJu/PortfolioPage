@@ -5171,7 +5171,7 @@ return array (
           array (
             'type' => 'datetime',
             'format' => 'date',
-            'default' => 1727861550,
+            'default' => 1729085262,
           ),
         ),
         'content_modification_date' => 
@@ -5184,7 +5184,7 @@ return array (
           array (
             'type' => 'datetime',
             'format' => 'date',
-            'default' => 1727861550,
+            'default' => 1729085262,
           ),
         ),
         'note' => 
@@ -7607,6 +7607,7 @@ return array (
           'form_formframework' => 'content-form',
           'felogin_login' => 'mimetypes-x-content-login',
           't3s_swiperslider' => 'tt_content-t3s_swiperslider-bf0fb04',
+          'mrhaju_flipcard' => 'tt_content-mrhaju_flipcard-116cf86',
           'mrhaju_progressbar' => 'tt_content-mrhaju_progressbar-116cf86',
           'accordion' => 'content-bootstrappackage-accordion',
           'audio' => 'content-audio',
@@ -7639,7 +7640,7 @@ return array (
           'container_3_columns' => 'container_3_columns',
           'container_4_columns' => 'container_4_columns',
         ),
-        'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform,mrhaju_progressbar_progress,mrhaju_progressbar_progressHeight',
+        'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform,mrhaju_progressbar_progress,mrhaju_progressbar_progressHeight,mrhaju_flipcard_cardTitle,mrhaju_flipcard_cardText',
         'security' => 
         array (
           'ignorePageTypeRestriction' => true,
@@ -7866,215 +7867,222 @@ return array (
               ),
               30 => 
               array (
+                'label' => 'LLL:EXT:mrhaju_sidepackage/ContentBlocks/ContentElements/flip-card/Source/Language/Labels.xlf:title',
+                'value' => 'mrhaju_flipcard',
+                'icon' => 'tt_content-mrhaju_flipcard-116cf86',
+                'group' => 'content_blocks',
+              ),
+              31 => 
+              array (
                 'label' => 'LLL:EXT:mrhaju_sidepackage/ContentBlocks/ContentElements/progress-bar/Source/Language/Labels.xlf:title',
                 'value' => 'mrhaju_progressbar',
                 'icon' => 'tt_content-mrhaju_progressbar-116cf86',
                 'group' => 'content_blocks',
               ),
-              31 => 
+              32 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.accordion',
                 'value' => 'accordion',
                 'icon' => 'content-bootstrappackage-accordion',
                 'group' => 'bootstrap_package',
               ),
-              32 => 
+              33 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.audio',
                 'value' => 'audio',
                 'icon' => 'content-audio',
                 'group' => 'bootstrap_package',
               ),
-              33 => 
+              34 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.card_group',
                 'value' => 'card_group',
                 'icon' => 'content-bootstrappackage-card-group',
                 'group' => 'bootstrap_package',
               ),
-              34 => 
+              35 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.carousel',
                 'value' => 'carousel',
                 'icon' => 'content-bootstrappackage-carousel',
                 'group' => 'bootstrap_package',
               ),
-              35 => 
+              36 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.carousel_small',
                 'value' => 'carousel_small',
                 'icon' => 'content-bootstrappackage-carousel',
                 'group' => 'bootstrap_package',
               ),
-              36 => 
+              37 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.carousel_fullscreen',
                 'value' => 'carousel_fullscreen',
                 'icon' => 'content-bootstrappackage-carousel',
                 'group' => 'bootstrap_package',
               ),
-              37 => 
+              38 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.csv',
                 'value' => 'csv',
                 'icon' => 'content-bootstrappackage-csv',
                 'group' => 'bootstrap_package',
               ),
-              38 => 
+              39 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.external_media',
                 'value' => 'external_media',
                 'icon' => 'content-bootstrappackage-externalmedia',
                 'group' => 'bootstrap_package',
               ),
-              39 => 
+              40 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.gallery',
                 'value' => 'gallery',
                 'icon' => 'content-bootstrappackage-gallery',
                 'group' => 'bootstrap_package',
               ),
-              40 => 
+              41 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.icon_group',
                 'value' => 'icon_group',
                 'icon' => 'content-bootstrappackage-icon-group',
                 'group' => 'bootstrap_package',
               ),
-              41 => 
+              42 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.listgroup',
                 'value' => 'listgroup',
                 'icon' => 'content-bootstrappackage-listgroup',
                 'group' => 'bootstrap_package',
               ),
-              42 => 
+              43 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.media',
                 'value' => 'media',
                 'icon' => 'mimetypes-x-content-multimedia',
                 'group' => 'bootstrap_package',
               ),
-              43 => 
+              44 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:menu.card_list',
                 'value' => 'menu_card_list',
                 'icon' => 'content-bootstrappackage-menu-card',
                 'group' => 'bootstrap_package',
               ),
-              44 => 
+              45 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:menu.card_dir',
                 'value' => 'menu_card_dir',
                 'icon' => 'content-bootstrappackage-menu-card',
                 'group' => 'bootstrap_package',
               ),
-              45 => 
+              46 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:menu.thumbnail_list',
                 'value' => 'menu_thumbnail_list',
                 'icon' => 'content-menu-thumbnail',
                 'group' => 'bootstrap_package',
               ),
-              46 => 
+              47 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:menu.thumbnail_dir',
                 'value' => 'menu_thumbnail_dir',
                 'icon' => 'content-menu-thumbnail',
                 'group' => 'bootstrap_package',
               ),
-              47 => 
+              48 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.panel',
                 'value' => 'panel',
                 'icon' => 'content-panel',
                 'group' => 'bootstrap_package',
               ),
-              48 => 
+              49 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.quote',
                 'value' => 'quote',
                 'icon' => 'content-quote',
                 'group' => 'bootstrap_package',
               ),
-              49 => 
+              50 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.social_links',
                 'value' => 'social_links',
                 'icon' => 'content-bootstrappackage-social-links',
                 'group' => 'bootstrap_package',
               ),
-              50 => 
+              51 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.tab',
                 'value' => 'tab',
                 'icon' => 'content-bootstrappackage-tab',
                 'group' => 'bootstrap_package',
               ),
-              51 => 
+              52 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.textcolumn',
                 'value' => 'textcolumn',
                 'icon' => 'content-text-columns',
                 'group' => 'bootstrap_package',
               ),
-              52 => 
+              53 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.texticon',
                 'value' => 'texticon',
                 'icon' => 'content-bootstrappackage-texticon',
                 'group' => 'bootstrap_package',
               ),
-              53 => 
+              54 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.textteaser',
                 'value' => 'textteaser',
                 'icon' => 'content-text-teaser',
                 'group' => 'bootstrap_package',
               ),
-              54 => 
+              55 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.timeline',
                 'value' => 'timeline',
                 'icon' => 'content-bootstrappackage-timeline',
                 'group' => 'bootstrap_package',
               ),
-              55 => 
+              56 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:container.container_1_columns.name',
                 'value' => 'container_1_columns',
                 'icon' => 'container_1_columns',
                 'group' => 'container',
               ),
-              56 => 
+              57 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:container.container_2_columns.name',
                 'value' => 'container_2_columns',
                 'icon' => 'container_2_columns',
                 'group' => 'container',
               ),
-              57 => 
+              58 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:container.container_2_columns_right.name',
                 'value' => 'container_2_columns_right',
                 'icon' => 'container_2_columns_right',
                 'group' => 'container',
               ),
-              58 => 
+              59 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:container.container_2_columns_left.name',
                 'value' => 'container_2_columns_left',
                 'icon' => 'container_2_columns_left',
                 'group' => 'container',
               ),
-              59 => 
+              60 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:container.container_3_columns.name',
                 'value' => 'container_3_columns',
                 'icon' => 'container_3_columns',
                 'group' => 'container',
               ),
-              60 => 
+              61 => 
               array (
                 'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:container.container_4_columns.name',
                 'value' => 'container_4_columns',
@@ -10616,6 +10624,64 @@ return array (
           ),
           'exclude' => true,
           'label' => 'progressHeight',
+        ),
+        'mrhaju_flipcard_cardImageFront' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'file',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'mrhaju_flipcard_cardImageFront',
+              'tablenames' => 'tt_content',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+          ),
+          'exclude' => true,
+          'label' => 'cardImageFront',
+        ),
+        'mrhaju_flipcard_cardBackContent' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'file',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'mrhaju_flipcard_cardBackContent',
+              'tablenames' => 'tt_content',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+          ),
+          'exclude' => true,
+          'label' => 'cardBackContent',
+        ),
+        'mrhaju_flipcard_cardTitle' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => true,
+          'label' => 'cardTitle',
+        ),
+        'mrhaju_flipcard_cardText' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'input',
+          ),
+          'exclude' => true,
+          'label' => 'cardText',
         ),
         't3s_swiperslider_items' => 
         array (
@@ -13295,6 +13361,91 @@ return array (
             ),
           ),
         ),
+        'mrhaju_flipcard' => 
+        array (
+          'previewRenderer' => 'TYPO3\\CMS\\ContentBlocks\\Backend\\Preview\\PreviewRenderer',
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;;general,header,mrhaju_flipcard_cardImageFront,mrhaju_flipcard_cardBackContent,mrhaju_flipcard_cardTitle,mrhaju_flipcard_cardText,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;;mrhaju_flipcard_frames_palette,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription',
+          'columnsOverrides' => 
+          array (
+            'header' => 
+            array (
+              'label' => 'LLL:EXT:mrhaju_sidepackage/ContentBlocks/ContentElements/flip-card/Source/Language/Labels.xlf:header.label',
+              'config' => 
+              array (
+              ),
+            ),
+            'mrhaju_flipcard_cardImageFront' => 
+            array (
+              'label' => 'Card Front Image',
+              'config' => 
+              array (
+              ),
+            ),
+            'mrhaju_flipcard_cardBackContent' => 
+            array (
+              'label' => 'Card Back Content',
+              'config' => 
+              array (
+              ),
+            ),
+            'mrhaju_flipcard_cardTitle' => 
+            array (
+              'label' => 'Card Title',
+              'config' => 
+              array (
+              ),
+            ),
+            'mrhaju_flipcard_cardText' => 
+            array (
+              'label' => 'Card Text',
+              'config' => 
+              array (
+              ),
+            ),
+            'layout' => 
+            array (
+              'config' => 
+              array (
+                'items' => 
+                array (
+                ),
+              ),
+            ),
+            'frame_class' => 
+            array (
+              'config' => 
+              array (
+                'items' => 
+                array (
+                ),
+              ),
+            ),
+            'space_before_class' => 
+            array (
+              'config' => 
+              array (
+                'items' => 
+                array (
+                ),
+              ),
+            ),
+            'space_after_class' => 
+            array (
+              'config' => 
+              array (
+                'items' => 
+                array (
+                ),
+              ),
+            ),
+            'categories' => 
+            array (
+              'config' => 
+              array (
+              ),
+            ),
+          ),
+        ),
         'mrhaju_progressbar' => 
         array (
           'previewRenderer' => 'TYPO3\\CMS\\ContentBlocks\\Backend\\Preview\\PreviewRenderer',
@@ -14688,6 +14839,11 @@ return array (
             ',
         ),
         'mrhaju_progressbar_frames_palette' => 
+        array (
+          'showitem' => 'layout,frame_class,space_before_class,space_after_class',
+          'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames',
+        ),
+        'mrhaju_flipcard_frames_palette' => 
         array (
           'showitem' => 'layout,frame_class,space_before_class,space_after_class',
           'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames',

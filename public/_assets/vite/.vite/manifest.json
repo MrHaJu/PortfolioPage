@@ -1,11 +1,28 @@
 {
   "packages/mrhaju_sidepackage/Resources/Private/Frontend/main.entry.js": {
-    "file": "assets/main.entry-D0i_ngvO.js",
+    "file": "assets/main.entry-Cq9XNnSA.js",
     "name": "main.entry",
     "src": "packages/mrhaju_sidepackage/Resources/Private/Frontend/main.entry.js",
     "isEntry": true,
     "css": [
-      "assets/main-D38uD2m0.css"
+      "assets/main-BG73HBIN.css"
+    ],
+    "assets": [
+      "assets/New Boston NF W01 Regular-2AppEKBw.woff2",
+      "assets/Rubik-Regular-DiJG_9Tc.woff2",
+      "assets/Ubuntu-Regular-ChGT2urG.woff2"
     ]
+  },
+  "packages/mrhaju_sidepackage/Resources/Public/Fonts/New Boston NF W01 Regular.woff2": {
+    "file": "assets/New Boston NF W01 Regular-2AppEKBw.woff2",
+    "src": "packages/mrhaju_sidepackage/Resources/Public/Fonts/New Boston NF W01 Regular.woff2"
+  },
+  "packages/mrhaju_sidepackage/Resources/Public/Fonts/Rubik-Regular.woff2": {
+    "file": "assets/Rubik-Regular-DiJG_9Tc.woff2",
+    "src": "packages/mrhaju_sidepackage/Resources/Public/Fonts/Rubik-Regular.woff2"
+  },
+  "packages/mrhaju_sidepackage/Resources/Public/Fonts/Ubuntu-Regular.woff2": {
+    "file": "assets/Ubuntu-Regular-ChGT2urG.woff2",
+    "src": "packages/mrhaju_sidepackage/Resources/Public/Fonts/Ubuntu-Regular.woff2"
   }
 }

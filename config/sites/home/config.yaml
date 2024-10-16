@@ -1,4 +1,11 @@
 base: 'https://typo3v13.ddev.site/'
+baseVariants:
+  -
+    base: 'https://typo3v13.ddev.site/'
+    condition: 'applicationContext == "development"'
+  -
+    base: 'https://p679284.webspaceconfig.de/'
+    condition: 'applicationContext == "Production"'
 languages:
   -
     title: Deutsch

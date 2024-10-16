@@ -1,0 +1,34 @@
+<cb:asset.css file="Frontend.css" identifier="content-block-css-mrhaju-mrhaju/progress-bar"/>
+<cb:asset.script file="Frontend.js" identifier="content-block-js-mrhaju-mrhaju/progress-bar"/>
+<f:layout name="Default"/>
+<f:section name="Header"/>
+<f:section name="Main">
+
+
+    <div class="container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="card">
+                        <img alt="Avatar" src="{data.cardImageFront.0.publicUrl}"/>
+                        <div class="card-body">
+                            <h2 class="card-title">{data.cardTitle}</h2>
+                            <p class="card-text">{data.cardText}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card">
+                        <object data="{data.cardBackContent.0.publicUrl}" height="700" type="application/pdf"
+                                width="1000">
+                            <p>Falls Ihr Browser das PDF nicht anzeigen kann, können Sie es hier herunterladen:
+                                <a href="{data.cardBackContent.0.publicUrl}">Download PDF</a></p>
+                        </object>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</f:section>

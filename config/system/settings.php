@@ -11,17 +11,12 @@ return [
     'DB' => [
         'Connections' => [
             'Default' => [
-                'charset' => 'utf8mb4',
-                'dbname' => 'db',
+                'dbname' => 'usr_p679284_1',
                 'driver' => 'mysqli',
-                'host' => 'db',
-                'password' => 'db',
+                'host' => 'db002389.mydbserver.com',
+                'password' => 'Predator-!01.1982',
                 'port' => 3306,
-                'tableoptions' => [
-                    'charset' => 'utf8mb4',
-                    'collate' => 'utf8mb4_unicode_ci',
-                ],
-                'user' => 'db',
+                'user' => 'p679284',
             ],
         ],
     ],

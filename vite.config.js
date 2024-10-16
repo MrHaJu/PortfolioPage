@@ -1,7 +1,9 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
-import autoOrigin from "vite-plugin-auto-origin";
+import { defineConfig } from 'vite';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import typo3 from "vite-plugin-typo3";
 
+const currentDir = dirname(fileURLToPath(import.meta.url));
 // TYPO3 root path (relative to this config file)
 const VITE_TYPO3_ROOT = "./";
 
@@ -10,14 +12,15 @@ const VITE_ENTRYPOINTS = [
     "packages/mrhaju_sidepackage/Resources/Private/Frontend/main.entry.js",
 ];
 const VITE_OUTPUT_PATH = 'public/_assets/vite/';
-const rootPath = resolve(__dirname, VITE_TYPO3_ROOT);
+const rootPath = resolve(currentDir, VITE_TYPO3_ROOT);
 
 export default defineConfig({
     root: rootPath,
     base: '',
     resolve: {
         alias: {
-            '@bk2k': resolve(__dirname, '/vendor/bk2k/bootstrap-package/')
+            '@bk2k': resolve(currentDir, '/vendor/bk2k/bootstrap-package/'),
+            '@mrhaju': resolve(currentDir, '/vendor/mrahju/mrhaju_sidepackage/')
         },
     },
     build: {
@@ -41,6 +44,6 @@ export default defineConfig({
             preflightContinue: false,
         },
     },
-    plugins: [autoOrigin()],
+    plugins: [typo3()],
     publicDir: false,
 });
